@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/difficulty_settings"
+        android:textColor="@color/white"
+        android:background="@color/buttonBackgroundRed"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/word_size"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        />
+
+    <RadioGroup
+        android:id="@+id/difficultyGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/normal_difficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/normal_4_5_6"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:buttonTint="@color/white"/>
+
+        <RadioButton
+            android:id="@+id/hard_difficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hard_7_8_9"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:buttonTint="@color/white"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/timer"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        />
+
+    <RadioGroup
+        android:id="@+id/timer_difficultyGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/easy_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/easy_5_minutes"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:buttonTint="@color/white"/>
+        <RadioButton
+            android:id="@+id/normal_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/normal_2_minutes"
+            android:textSize="20sp"
+            android:buttonTint="@color/white"/>
+        <RadioButton
+            android:id="@+id/hard_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hard_1_minutes"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:buttonTint="@color/white"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:text="@string/save_settings"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"/>
+
+</LinearLayout>
